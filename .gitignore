@@ -18,6 +18,8 @@ full_control/comment/
 
 # Project context files
 PROJECT_CONTEXT*.md
+lane_keeping/lane_keeping_context.md
+*_context.md
 
 # VS Code settings
 .vscode/

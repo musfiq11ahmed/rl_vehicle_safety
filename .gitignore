@@ -6,12 +6,12 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Trained model files — too large for GitHub
+# Trained model files
 experiments/
 *.zip
 
 # Annotated comment versions
-comment/
+full_control/comment/
 
 # Plot images
 *.png

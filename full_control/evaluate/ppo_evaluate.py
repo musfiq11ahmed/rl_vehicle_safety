@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from stable_baselines3 import PPO
-from envs.vehicle_env import VehicleSafetyEnv
+from full_control.envs.custom_env import VehicleSafetyEnv
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 NUM_EPISODES = 100

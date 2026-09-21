@@ -1,6 +1,6 @@
 import sys
 sys.path.append(".")
-from envs.vehicle_env import VehicleSafetyEnv
+from full_control.envs.custom_env import VehicleSafetyEnv
 
 env = VehicleSafetyEnv()
 obs, info = env.reset()

@@ -105,7 +105,7 @@ class VehicleSafetyEnv(gym.Env):
         #return 8.0
     
     def _compute_reward(self, ttc, collided):
-        # Collision — catastrophic failure
+        # Collision
         if collided:
             return -200.0
 
@@ -113,10 +113,7 @@ class VehicleSafetyEnv(gym.Env):
         if ttc < self.ttc_threshold:
             return -50.0
 
-        # Speed penalty — penalizes driving too slowly
-        # Without this the agent learns to brake to a near-stop
-        # which maximizes TTC but is useless in real driving
-        # target = 15 m/s — penalized proportionally if below this
+        # Speed penalty — penalizes driving too slowly        
         speed_penalty = max(0, 15.0 - self.ego_speed) * 0.5
 
         # Safe approach zone — reward scales with TTC margin

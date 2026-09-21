@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from stable_baselines3 import PPO
 from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.callbacks import BaseCallback
-from envs.vehicle_env import VehicleSafetyEnv
+from full_control.envs.custom_env import VehicleSafetyEnv
 
 # ── Callback: records reward after every episode ──────────────────────────────
 class TrainingLogger(BaseCallback):

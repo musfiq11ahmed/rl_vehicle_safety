@@ -1,5 +1,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
-# envs/lane_keeping_config.py
+# envs/lane_keeping_config_s1_1.py
+#
+# Sub-stage 1.1 (PPO baseline, built-in reward).
 #
 # Configuration and factory function for HighwayEnv's built-in
 # "lane-keeping-v0" environment.
